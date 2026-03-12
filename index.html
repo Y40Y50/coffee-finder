@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ☕ Coffee Finder</title>
+    <script src="https://kit.fontawesome.com/9922ec3484.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Coffee Finder Logo" class="logo">
+            <span class="brand">Coffee Finder</span>
+        </div>
+
+        <nav class="nav-links">
+            <div class="menu-items">
+                <a href="#home">Home</a>
+                <a href="#finder">Finder</a>
+                <a href="#coffee">Coffee</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#about">About</a>
+                <a href="#coffee" class="order-btn">Order Now</a>
+            </div>
+        </nav>
+
+        <i class="fa-solid fa-bars menu-icon"></i>
+    </header>
+    <main>
+        <section class="hero-container" id="home">
+            <div class="hero-left">
+                <h1>Free £5</h1>
+                <h2>when you spend £20 online</h2>
+                <p>Small gestures can mean the most. Send a little joy with our online Gift Cards — perfect for coffee
+                    lovers.</p>
+                <a href="#" class="buy-btn">Buy online today</a>
+            </div>
+            <div class="hero-right">
+                <img src="assets/images/coffee_cup.png" alt="Coffee Splash">
+            </div>
+        </section>
+        <section class="find-coffee" id="finder">
+            <div class="finder-container">
+                <h2 class="section-title">Find your perfect coffee</h2>
+                <p class="finder-subtitle">From smooth lattes to bold espressos, find the brew that suits your mood.</p>
+
+                <div class="search-bar-wrapper">
+                    <input type="text" placeholder="Search our menu..." id="coffee-search">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="category-filters">
+                    <button class="filter-chip active">All</button>
+                    <button class="filter-chip">Hot Coffee</button>
+                    <button class="filter-chip">Iced Coffee</button>
+                    <button class="filter-chip">Seasonal</button>
+                </div>
+            </div>
+        </section>
+        <section class="coffee-scroller" id="coffee">
+            <h2 class="scroller-title">Choose your favorite blend</h2>
+            <div class="scroller-wrapper">
+                <div class="coffee-card">
+                    <img src="assets/images/latte.jpg" alt="Latte" class="round-image">
+                    <h3>Caffe Latte</h3>
+                    <p>Smooth and creamy</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+                <div class="coffee-card">
+                    <img src="assets/images/cappuccino.jpg" alt="Cappuccino" class="round-image">
+                    <h3>Cappuccino</h3>
+                    <p>Frothy and bold</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+                <div class="coffee-card">
+                    <img src="assets/images/espresso.jpg" alt="Espresso" class="round-image">
+                    <h3>Espresso</h3>
+                    <p>Rich and velvety</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+                <div class="coffee-card">
+                    <img src="assets/images/americano.jpg" alt=" Americano" class="round-image">
+                    <h3>Americano</h3>
+                    <p>Cool and refreshing</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+                <div class="coffee-card">
+                    <img src="assets/images/mocha.jpg" alt="Mocha" class="round-image">
+                    <h3>Mocha</h3>
+                    <p>Sweet chocolate bliss</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="coffee-quiz" id="quiz">
+            <div class="quiz-container">
+                <h2 class="scroller-title">Find Your Perfect Blend</h2>
+                <p class="quiz-subtitle">Answer 3 quick questions and we'll find your coffee match!</p>
+
+                <div id="quiz-box">
+                    <div class="question-container">
+                        <h3 id="question-text">How do you prefer your coffee?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-opt" onclick="checkChoice('Hot & Steamy')">Hot & Steamy</button>
+                            <button class="quiz-opt" onclick="checkChoice('Iced & Refreshing')">Iced &
+                                Refreshing</button>
+                            <button class="quiz-opt" onclick="checkChoice('Sweet & Creamy')">Sweet & Creamy</button>
+                            <button class="quiz-opt" onclick="checkChoice('Black & Strong')">Black & Strong</button>
+                        </div>
+
+                        <div id="quiz-result" style="margin-top: 20px; font-weight: bold; color: var(--primary-color);">
+                        </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 33%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/images/logo.png" alt="Our Coffee Story" class="round-image-about">
+                </div>
+                <div class="about-text">
+                    <h2 class="scroller-title" style="text-align: left; padding: 0;">Our Story</h2>
+                    <p>Founded on a passion for the perfect roast, <strong>Coffee Finder</strong> is dedicated to
+                        bringing the world's finest beans straight to your cup. We believe every bean has a story, and
+                        every cup is an experience.</p>
+                    <p>From sustainably sourced farms to our signature dark roast, we ensure every sip is "Black &
+                        Strong" or "Sweet & Creamy"—exactly how you like it.</p>
+                    <a href="#" class="order-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>>
+    <div class="social-links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+
+    </div>
+
+    <div class="copyright-bar">
+        <p>&copy; 2024 Coffee Finder. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
