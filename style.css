@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* --- 1. FONTS & VARIABLES --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
 
@@ -369,3 +370,335 @@ main {
     .about-container { flex-direction: column; text-align: center; }
     .round-image-about { width: 300px; height: 300px; }
 }
+=======
+/* --- 1. FONTS & VARIABLES --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
+
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Macondo', cursive;
+    --primary-color: #180202;
+    --secondary-color: #aa95818b;
+    --highlight-color: #ddc0ac;
+    --light-highlight-color: #7a9fc2;
+    --white: #ffffff;
+    --cream: #fdfaf8;
+}
+
+/* --- 2. GLOBAL STYLES --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--primary-font);
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+main {
+    flex: 1;
+}
+
+/* --- 3. NAVBAR STYLES --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5%;
+    height: 80px;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu-items a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-items a:hover, .menu-items a.active {
+    color: var(--highlight-color);
+}
+
+/* Navbar Button */
+.nav-links .order-btn {
+    background-color: var(--highlight-color);
+    color: var(--primary-color) !important;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold !important;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+/* --- 4. HERO SECTION --- */
+.hero-container {
+    display: flex;
+    min-height: 500px;
+    background-color: var(--highlight-color);
+    width: 100%;
+}
+
+.hero-left {
+    flex: 1.2;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 150px 50%;
+    border-bottom-right-radius: 150px 50%;
+}
+
+.hero-left h1 { font-size: 3.5rem; margin: 0; font-weight: 800; }
+.hero-left h2 { font-size: 2.2rem; margin: 10px 0 20px 0; }
+.hero-left p { font-size: 1.1rem; line-height: 1.6; max-width: 450px; margin-bottom: 30px; }
+
+.buy-btn {
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 14px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    transition: transform 0.3s;
+}
+
+.buy-btn:hover { transform: scale(1.05); }
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-right img {
+    max-width: 70%;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* --- 5. FINDER SECTION --- */
+.find-coffee {
+    padding: 80px 20px;
+    background-color: var(--cream);
+    text-align: center;
+}
+
+.section-title { font-size: 2.8rem; font-weight: 800; color: var(--primary-color); margin-bottom: 10px; }
+.finder-subtitle { color: #666; margin-bottom: 40px; }
+
+.search-bar-wrapper {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    background: var(--white);
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.search-bar-wrapper input { flex: 1; border: none; padding: 15px 25px; outline: none; }
+.search-btn { background: var(--primary-color); color: var(--white); border: none; padding: 0 25px; cursor: pointer; }
+
+.category-filters { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.filter-chip {
+    padding: 8px 20px;
+    border: 1.5px solid var(--primary-color);
+    background: transparent;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-chip.active, .filter-chip:hover { background: var(--primary-color); color: var(--white); }
+
+/* --- 6. COFFEE SCROLLER & CARDS --- */
+.coffee-scroller { padding: 80px 20px; background-color: var(--cream); }
+.scroller-title { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+
+.scroller-wrapper {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.coffee-card {
+    width: 260px;
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* THE CENTERING FIX */
+    transition: transform 0.3s;
+}
+
+.coffee-card:hover { transform: translateY(-10px); }
+
+.round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+}
+
+/* Card Button Fix */
+.coffee-card .order-btn {
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* --- 7. QUIZ SECTION --- */
+.coffee-quiz { padding: 80px 20px; background-color: var(--white); text-align: center; }
+.quiz-container { max-width: 600px; margin: 0 auto; }
+#quiz-box { background-color: var(--highlight-color); padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+.quiz-opt {
+    background: var(--white);
+    border: 2px solid transparent;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quiz-opt:hover { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
+
+.progress-bar { width: 100%; height: 8px; background: rgba(255,255,255,0.4); border-radius: 10px; margin-top: 30px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--primary-color); width: 33%; transition: 0.5s; }
+
+/* --- 8. ABOUT SECTION --- */
+.about-section { padding: 100px 20px; background-color: var(--highlight-color); }
+.about-container { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 60px; }
+.about-image { flex: 1; }
+.round-image-about { width: 100%; max-width: 450px; height: 450px; border-radius: 50%; object-fit: cover; border: 8px solid var(--white); }
+.about-text { flex: 1; }
+.about-text p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; }
+
+/* --- 9. FOOTER & SOCIALS --- */
+.social-links {
+    background-color: var(--primary-color);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-links a:hover { color: var(--highlight-color); transform: translateY(-5px); }
+
+.copyright-bar {
+    background-color: var(--primary-color);
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* --- 10. MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .navbar { padding: 10px 20px; justify-content: center; }
+    .menu-icon { display: block; position: fixed; left: 20px; top: 20px; z-index: 2000; }
+    
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100vh;
+        background: var(--highlight-color);
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-links.active { display: flex; }
+    .menu-items { flex-direction: column; gap: 20px; }
+    .menu-items a { color: var(--primary-color); font-size: 1.5rem; font-weight: 700; }
+
+    .hero-container { flex-direction: column; }
+    .hero-left { border-radius: 0; text-align: center; align-items: center; padding: 40px 20px; }
+    .hero-left h1 { font-size: 2.5rem; }
+    .hero-right img { max-width: 60%; margin-top: 20px; }
+
+    .scroller-wrapper { flex-direction: column; align-items: center; }
+    .quiz-options { grid-template-columns: 1fr; }
+
+    .about-container { flex-direction: column; text-align: center; }
+    .round-image-about { width: 300px; height: 300px; }
+}
+>>>>>>> 2b98fad4a10e5cf8ad39386c0aa7b705fee03a6f
