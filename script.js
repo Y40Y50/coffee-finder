@@ -55,3 +55,23 @@ function checkChoice(choice) {
         progressFill.style.width = "100%";
     }
 }
+const modal = document.getElementById("videoModal");
+const btn = document.getElementById("openVideo");
+const span = document.getElementsByClassName("close-modal")[0];
+
+// User INITIATES action (Opens Modal)
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// User CONTROLS action (Closes Modal)
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// User CONTROLS action (Closes by clicking outside the box)
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

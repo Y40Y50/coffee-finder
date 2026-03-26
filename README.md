@@ -14,14 +14,14 @@ To ensure a high-quality User Experience (UX), the site was developed based on t
 
 ## Design & Accessibility
 ### Design Choices
-- **Color Palette**: We used a "Dark Roast" theme (Primary: #180202) contrasted with "Cream" (#fdfaf8) to ensure high readability and a premium feel (Pass 1.4).
+- **Color Palette**: We used a "Dark Roast" theme (Primary: #180202) contrasted with "Cream" (#fdfaf8) to ensure high readability and a premium feel .
 - **Typography**: 'Inter' was chosen for body text for maximum legibility on small screens.
 - **Imagery**: Consistent rounded graphics were used to create a modern, friendly UI (Pass 1.5).
 
 ### Accessibility
 - **High Contrast**: All text passes AA contrast ratios against backgrounds.
 - **Alt Text**: All images contain descriptive alternative text for screen readers.
-- **Semantic HTML**: Used `<header>`, `<main>`, `<section>`, and `<footer>` tags to allow assistive technologies to navigate the structure easily (Pass 2.7).
+- **Semantic HTML**: Used `<header>`, `<main>`, `<section>`, and `<footer>` tags to allow assistive technologies to navigate the structure easily 
 
 ## 🛠️ Technologies Used
 - **HTML5**: Structured content.
@@ -38,6 +38,16 @@ To ensure a high-quality User Experience (UX), the site was developed based on t
 | Search Bar | Type in input | User can enter text to search | PASS |
 | Coffee Quiz | Click "Sweet & Creamy" | Result displays "Your choice is Latte!" | PASS |
 | Social Links | Click Instagram Icon | Opens Instagram in a new browser tab | PASS |
+
+### Color contrast Analysis
+Primary Text: White (#ffffff) on Dark Maroon (#180202).
+Action Buttons: Dark text on Cream/Highlight background ensures the call-to-action is clearly visible for users with low vision.
+
+### User Interaction
+User Control & Interactivity:
+Video Modal: Users can initiate a video pop-up by clicking the "Watch Our Story" button.
+Action Control: Users have full control over the action via a clear "X" close button and the ability to click outside the modal to dismiss it.
+Quiz Interaction: Users control the flow of the coffee quiz, initiating the logic with each button click to receive a personalized result.
 
 ### Validation
 - **HTML**: Validated via [W3C Markup Validator](https://validator.w3.org/).
