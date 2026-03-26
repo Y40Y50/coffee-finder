@@ -1,4 +1,4 @@
-// In your script.js
+// script.js
 const menuIcon = document.querySelector('.menu-icon');
 const navLinks = document.querySelector('.nav-links');
 
