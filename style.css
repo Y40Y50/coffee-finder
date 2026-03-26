@@ -1,6 +1,14 @@
-/* --- 1. FONTS & VARIABLES --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
+/* EXTERNAL CSS SOURCES & ATTRIBUTION
 
+   Google Fonts API: https://fonts.googleapis.com/
+    Fonts used: 'Inter' and 'Macondo'
+    Floating Animation Logic: 
+    Inspired by standard CSS keyframe tutorials (e.g. W3Schools)
+    Reset & Global Styles: 
+    Based on modern CSS reset best practices.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
+/*Written by Yahya */
 :root {
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Macondo', cursive;
@@ -234,6 +242,7 @@ main {
 .filter-chip.active, .filter-chip:hover { background: var(--primary-color); color: var(--white); }
 
 /* --- 6. COFFEE SCROLLER & CARDS --- */
+/*Source: W3Schools Modal Tutorial*/
 .coffee-scroller { padding: 80px 20px; background-color: var(--cream); }
 .scroller-title { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
 
@@ -338,6 +347,7 @@ main {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 /* Video Button Style */
+/*Source: W3Schools Modal Tutorial*/
 .video-btn {
     background: transparent;
     border: 2px solid white;
@@ -381,6 +391,12 @@ main {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+}
+.video-frame {
+    width: 100%;       
+    height: 315px;     
+    border: none;      
+    border-radius: 8px; 
 }
 
 /* --- 10. MOBILE RESPONSIVENESS --- */

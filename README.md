@@ -67,3 +67,15 @@ The site is deployed via **GitHub Pages**.
 - **Icons**: [FontAwesome](https://fontawesome.com/)
 - **Fonts**: [Google Fonts](https://fonts.google.com/)
 - **Images**: Sourced from high-resolution royalty-free providers (Unsplash/Pexels).
+## ⚖️ Credits & Attributions
+
+### Code Sources
+- **Modal Pop-up**: The structure and JavaScript for the video modal were adapted from the [W3Schools Modal Tutorial](https://www.w3schools.com/howto/howto_css_modals.asp).
+- **Navigation Toggle**: The mobile burger-menu logic was inspired by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) responsive design principles.
+- **Form/Search Styling**: Search bar layout inspired by [Bootstrap 5 documentation](https://getbootstrap.com/).
+
+### Media & Assets
+- **Icons**: All UI icons are provided by [FontAwesome](https://fontawesome.com/).
+- **Fonts**:   [Google Fonts](https://fonts.google.com/).
+- **Images**: High-resolution coffee image sourced from [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/).
+- **Videos**: Stock footage from [Pexels Video](https://www.pexels.com/videos/).

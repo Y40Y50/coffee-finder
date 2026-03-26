@@ -1,4 +1,13 @@
-// script.js
+/* JAVASCRIPT SOURCE ATTRIBUTION:
+  
+  Mobile Menu Toggle: Custom logic based on Traversy Media "Responsive Navbar" tutorial.
+  Coffee Quiz Logic: Original logic developed for this project.
+  Modal/Pop-up Logic: Based on W3Schools "How To - Modals" guide.
+    (Source: https://www.w3schools.com/howto/howto_css_modals.asp)
+*/
+// --- 1. Navigation Menu Logic 
+// Source: Traversy Media / Tutorials---
+
 const menuIcon = document.querySelector('.menu-icon');
 const navLinks = document.querySelector('.nav-links');
 
@@ -55,6 +64,7 @@ function checkChoice(choice) {
         progressFill.style.width = "100%";
     }
 }
+//Source: W3Schools Modal Tutorial---
 const modal = document.getElementById("videoModal");
 const btn = document.getElementById("openVideo");
 const span = document.getElementsByClassName("close-modal")[0];
