@@ -29,8 +29,6 @@ Coffee Finder is a front-end web application designed to help users discover cof
     HTML5
     CSS3
     JAVASCRIPT
-## Frameworks
-    Bootstrap 5
 ## Tools
     Git
     GitHub
@@ -197,6 +195,117 @@ Responsive design tested on different screen sizes
 
 [desktop view](assets/images/desktop-view.png) 
 [mobile view](assets/images/mobile-view.png)
+
+
+## 🔍 Coffee Search Feature
+
+### User Story
+
+As a user, I want to search for a coffee by name so that I can quickly find my preferred drink.
+
+---
+
+### Implementation
+
+A dynamic search feature was implemented using JavaScript to filter coffee items in real time.
+
+* The search input field captures user typing (`input` event)
+* Each coffee card is checked using its `<h3>` title
+* Matching results remain visible, while non-matching items are hidden
+
+---
+
+### Code Explanation
+
+The JavaScript selects all elements with the class `.coffee-card` and compares their names to the search input:
+
+```javascript
+const searchInput = document.getElementById("coffee-search");
+const coffeeCards = document.querySelectorAll(".coffee-card");
+
+searchInput.addEventListener("input", function () {
+    const searchValue = this.value.toLowerCase();
+
+    coffeeCards.forEach(card => {
+        const title = card.querySelector("h3").innerText.toLowerCase();
+
+        if (title.includes(searchValue)) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+```
+
+---
+
+### Structure Fix (Important)
+
+During development, an issue was identified where coffee names were incorrectly placed inside the search bar section.
+
+This was fixed by:
+
+* Removing coffee titles from the search bar
+* Ensuring all coffee names are inside `.coffee-card` elements
+
+Correct structure:
+
+```html
+<!-- Search Bar -->
+<div class="search-bar-wrapper">
+    <input type="text" id="coffee-search">
+    <button class="search-btn"></button>
+</div>
+
+<!-- Coffee Cards -->
+<div class="coffee-card">
+    <h3>Caffe Latte</h3>
+</div>
+```
+
+---
+
+### Evidence
+
+* Typing "latte" displays only the Latte card
+* Typing "espresso" filters results correctly
+* Real-time filtering improves user experience
+
+
+
+[before search](assets/images/before-search.png)
+[after search](assets/images/after-search.png)
+
+---
+
+### Outcome
+
+This feature improves usability by allowing users to quickly locate specific coffee options, enhancing the overall interactivity of the application.
+
+## 🔍 Coffee Search with Feedback
+
+### User Story
+
+As a user, I want to search for a coffee and receive feedback if no results are found, so that I understand whether my search was successful.
+
+---
+
+### Evidence
+
+* Typing a valid coffee name displays matching results
+* Typing an unrelated word shows "No coffee found ☕"
+* Clearing the input restores all coffee cards
+
+[results](assets/images/results.png)
+[no result](assets/images/noresults.png)
+
+---
+
+### Outcome
+
+This improvement enhances usability by clearly informing users when no matching results are found, ensuring better interaction and meeting input validation requirements.
+
 
 ## 📌 Future Improvements
 

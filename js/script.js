@@ -139,22 +139,29 @@ window.onclick = function (event) {
 
 const searchInput = document.getElementById("coffee-search");
 const coffeeCards = document.querySelectorAll(".coffee-card");
+const noResults = document.getElementById("no-results");
 
 searchInput.addEventListener("input", function () {
     const searchValue = this.value.toLowerCase();
 
+    let visible = 0;
+
     coffeeCards.forEach(card => {
         const title = card.querySelector("h3").innerText.toLowerCase();
+        const description = card.querySelector("p").innerText.toLowerCase();
 
-        if (title.includes(searchValue)) {
+        if (title.includes(searchValue) || description.includes(searchValue)) {
             card.style.display = "flex";
+            visible++;
         } else {
             card.style.display = "none";
         }
     });
-});
-const searchBtn = document.querySelector(".search-btn");
 
-searchBtn.addEventListener("click", () => {
-    searchInput.dispatchEvent(new Event("input"));
+    // Show / hide message
+    if (visible === 0) {
+        noResults.style.display = "block";
+    } else {
+        noResults.style.display = "none";
+    }
 });
