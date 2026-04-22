@@ -8,7 +8,7 @@
     <!-- Font Awesome CDN for icons -->
     <script src="https://kit.fontawesome.com/9922ec3484.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -66,7 +66,6 @@
                     <input type="text" placeholder="Search our menu..." id="coffee-search">
                     <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
-
                 <div class="category-filters">
                     <button class="filter-chip active">All</button>
                     <button class="filter-chip">Hot Coffee</button>
@@ -118,7 +117,7 @@
                 <div id="quiz-box">
                     <div class="question-container">
                         <h3 id="question-text">How do you prefer your coffee?</h3>
-                        <div class="quiz-options">
+                        <div class="quiz-options" id="quiz-options">
                             <button class="quiz-opt" onclick="checkChoice('Hot & Steamy')">Hot & Steamy</button>
                             <button class="quiz-opt" onclick="checkChoice('Iced & Refreshing')">Iced &
                                 Refreshing</button>
@@ -131,7 +130,7 @@
                     </div>
 
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 33%;"></div>
+                        <div class="progress-fill"></div>
                     </div>
                 </div>
             </div>
@@ -165,7 +164,7 @@
     <div class="copyright-bar">
         <p>&copy; 2024 Coffee Finder. All rights reserved.</p>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

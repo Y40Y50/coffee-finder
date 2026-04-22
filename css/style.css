@@ -199,6 +199,13 @@ main {
     max-width: 70%;
     animation: float 4s ease-in-out infinite;
 }
+.quiz-opt {
+    transition: all 0.3s ease;
+}
+
+.quiz-opt:active {
+    transform: scale(0.95);
+}
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }

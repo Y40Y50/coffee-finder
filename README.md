@@ -1,81 +1,208 @@
-# ☕ Coffee Finder
+# Coffee Finder 
 
-## Overview
-Coffee Finder is a user-centric web application designed to help coffee enthusiasts explore different blends, search for specific drinks, and discover their perfect match through an interactive quiz. The site provides a seamless experience across all devices, from desktop to mobile.
+## Project Overview
 
+Coffee Finder is a front-end web application designed to help users discover coffee options through a simple interactive quiz. The website provides a clean, responsive interface and allows users to engage with content easily.
 
+---
+
+## Target Audience
+
+* Coffee lovers looking for recommendations
+* Casual users exploring drink options
+* Mobile users needing a simple, responsive interface
+
+---
+
+## Features
+
+* Interactive quiz for coffee selection
+* Responsive design for mobile and desktop
+* Clean and consistent UI styling
+* Fast-loading static website
+
+---
+
+## Technologies Used
+
+## Languages
+    HTML5
+    CSS3
+    JAVASCRIPT
+## Frameworks
+    Bootstrap 5
+## Tools
+    Git
+    GitHub
+    GitHub Pages
+    Google Fonts
+    Font Awesome
+---
 
 ## User Stories
-To ensure a high-quality User Experience (UX), the site was developed based on the following user needs:
-1. **As a first-time visitor**, I want to immediately understand the brand's purpose so I can decide if I want to browse the menu.
-2. **As a busy professional**, I want a clear navigation menu and search bar so I can find my favorite drink quickly.
-3. **As someone new to coffee**, I want an interactive quiz to recommend a drink based on my taste preferences (Sweet, Bold, Iced).
-4. **As a mobile user**, I want a responsive layout and easy-to-click buttons so I can browse on the go.
 
-## Design & Accessibility
-### Design Choices
-- **Color Palette**: We used a "Dark Roast" theme (Primary: #180202) contrasted with "Cream" (#fdfaf8) to ensure high readability and a premium feel .
-- **Typography**: 'Inter' was chosen for body text for maximum legibility on small screens.
-- **Imagery**: Consistent rounded graphics were used to create a modern, friendly UI (Pass 1.5).
+* As a user, I want to answer a quiz so I can get a coffee recommendation
+* As a user, I want a simple layout so I can navigate easily
+* As a mobile user, I want the site to work on my device
 
-### Accessibility
-- **High Contrast**: All text passes AA contrast ratios against backgrounds.
-- **Alt Text**: All images contain descriptive alternative text for screen readers.
-- **Semantic HTML**: Used `<header>`, `<main>`, `<section>`, and `<footer>` tags to allow assistive technologies to navigate the structure easily 
+---
 
-## 🛠️ Technologies Used
-- **HTML5**: Structured content.
-- **CSS3**: Custom styling, Flexbox, and Media Queries for responsiveness.
-- **JavaScript**: Logic for the mobile menu toggle and the interactive Coffee Quiz.
-- **FontAwesome**: Scalable vector icons for social media and UI elements.
+## UX Design
 
-## 🧪 Testing Procedures
-### Manual Testing Table
-| Feature | Action | Expected Result | Result |
-|---------|--------|-----------------|--------|
-| Navbar | Click "Quiz" link | Page scrolls smoothly to Quiz section | PASS |
-| Mobile Menu | Click Burger Icon | Menu slides out and icon changes to "X" | PASS |
-| Search Bar | Type in input | User can enter text to search | PASS |
-| Coffee Quiz | Click "Sweet & Creamy" | Result displays "Your choice is Latte!" | PASS |
-| Social Links | Click Instagram Icon | Opens Instagram in a new browser tab | PASS |
+Wireframes were created to plan layout and structure before development.
 
-### Color contrast Analysis
-Primary Text: White (#ffffff) on Dark Maroon (#180202).
-Action Buttons: Dark text on Cream/Highlight background ensures the call-to-action is clearly visible for users with low vision.
+Design decisions:
 
-### User Interaction
-User Control & Interactivity:
-Video Modal: Users can initiate a video pop-up by clicking the "Watch Our Story" button.
-Action Control: Users have full control over the action via a clear "X" close button and the ability to click outside the modal to dismiss it.
-Quiz Interaction: Users control the flow of the coffee quiz, initiating the logic with each button click to receive a personalized result.
+* Simple navigation for ease of use
+* Large buttons for accessibility
+* Clear text for readability
+
+[wireframe](assets/images/wireframe-desktop.jpg)
+[wireframe](assets/images/wireframe-desktop1.jpg)
+[wireframe](assets/images/wireframe-mobile.jpg)
+
+---
+
+## Testing
+
+### Manual Testing
+
+| Feature      | Test              | Result                |
+| ------------ | ----------------- | --------------------- |
+| Quiz buttons | Click interaction | Works correctly       |
+| Layout       | Resize screen     | Responsive            |
+| Images       | Load on page      | All display correctly |
 
 ### Validation
-- **HTML**: Validated via [W3C Markup Validator](https://validator.w3.org/).
-- **CSS**: Validated via [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/).
 
-## 🚀 Deployment
-The site is deployed via **GitHub Pages**. 
-**Live Link:** [https://y40y50.github.io/coffee-finder/](https://y40y50.github.io/coffee-finder/)
+* HTML validated using W3C Validator
+[html validator](assets/images/Html-checker.png)
+* CSS validated using W3C Validator
+[html validator](assets/images/CSS-checker.png)
 
-### How to Deploy:
-1. Push the latest code to the `main` branch on GitHub.
-2. Go to **Settings > Pages**.
-3. Select the `main` branch as the source and click **Save**.
 
-## 📝 Attribution
-- All custom code was written by the author unless stated otherwise.
-- **Icons**: [FontAwesome](https://fontawesome.com/)
-- **Fonts**: [Google Fonts](https://fonts.google.com/)
-- **Images**: Sourced from high-resolution royalty-free providers (Unsplash/Pexels).
-## ⚖️ Credits & Attributions
+---
 
-### Code Sources
-- **Modal Pop-up**: The structure and JavaScript for the video modal were adapted from the [W3Schools Modal Tutorial](https://www.w3schools.com/howto/howto_css_modals.asp).
-- **Navigation Toggle**: The mobile burger-menu logic was inspired by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) responsive design principles.
-- **Form/Search Styling**: Search bar layout inspired by [Bootstrap 5 documentation](https://getbootstrap.com/).
+## Bugs Found and Fixed
 
-### Media & Assets
-- **Icons**: All UI icons are provided by [FontAwesome](https://fontawesome.com/).
-- **Fonts**:   [Google Fonts](https://fonts.google.com/).
-- **Images**: High-resolution coffee image sourced from [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/).
-- **Videos**: Stock footage from [Pexels Video](https://www.pexels.com/videos/).
+* Quiz not responding initially → Fixed by correcting event listener
+* Image not loading → Fixed file path
+* Styling inconsistency → Unified CSS classes
+
+---
+
+## Deployment
+
+This project was deployed using GitHub Pages.
+[GitHub live link](https://y40y50.github.io/coffee-finder/)
+
+Steps:
+
+1. Push project to GitHub
+2. Go to repository settings
+3. Enable GitHub Pages
+4. Select main branch
+5. Site is live
+
+---
+
+## Version Control
+
+Git and GitHub were used to manage development.
+Commits include:
+
+* Initial project setup
+* Added quiz functionality
+* Fixed bugs and improved UI
+
+---
+
+## File Structure
+
+/css – Stylesheets
+/js – JavaScript files
+/assets/images – Image assets
+index.html – Main page
+
+---
+
+## Credits
+
+Some guidance and tutorials were referenced during development and have been credited within the code comments.
+
+---
+
+## User Stories with Evidence
+### 1. Coffee Recommendation Quiz
+#### User Story:
+    As a user, I want to answer a quiz so that I can get a coffee recommendation based on my preferences.
+
+#### Evidence:
+The quiz allows users to select options such as "Black & Strong" or "Sweet & Creamy"
+JavaScript function checkChoice() processes user input and displays results
+The result is shown dynamically on the page without reloading
+
+[Qiz-result befor](assets/images/Quiz-Result.png)
+[Qiz-result after](assets/images/Quiz-Resultafter.png)
+
+### 2. Responsive Navigation Menu
+
+#### User Story:
+As a mobile user, I want a navigation menu that I can open and close so that I can easily access different sections.
+
+#### Evidence:
+
+Hamburger menu icon toggles navigation links
+JavaScript event listener adds/removes .active class
+Menu icon changes from ☰ to X for better UX
+
+[menu closed](assets/images/menu-close.png)
+[menu open](assets/images/menu-open.png)
+
+### 3. Interactive Video Modal
+
+#### User Story:
+As a user, I want to watch a video in a popup so that I can learn more without leaving the page.
+
+#### Evidence:
+
+Modal opens when "Watch Video" button is clicked
+Modal closes when clicking X or outside the modal
+Implemented using JavaScript and CSS modal logic
+
+[modal open](assets/images/model-open.png)
+
+### 4. Visual Feedback with Progress Bar
+
+#### User Story:
+As a user, I want visual feedback when I interact with the quiz so that I understand my progress.
+
+#### Evidence:
+
+Progress bar fills when a selection is made
+Updated dynamically using JavaScript (progressFill.style.width)
+
+[progress bar](assets/images/progress-bar.png)
+
+### 5. Clean and Accessible Layout
+
+#### User Story:
+As a user, I want a clean and readable layout so that I can easily understand the content.
+
+#### Evidence:
+
+Consistent color scheme and typography
+Clear headings and readable text
+Responsive design tested on different screen sizes
+
+[desktop view](assets/images/desktop-view.png) 
+[mobile view](assets/images/mobile-view.png)
+
+## 📌 Future Improvements
+
+* Add more quiz questions
+* Improve interactivity
+* Add search/filter functionality
+* Enhance UI animations
+
+---
