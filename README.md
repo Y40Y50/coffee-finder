@@ -77,6 +77,8 @@ Design decisions:
 [html validator](assets/images/Html-checker.png)
 * CSS validated using W3C Validator
 [html validator](assets/images/CSS-checker.png)
+* JC validated using jslint 
+[js validator](assets/images/jslint-checker.png)
 
 
 ---
