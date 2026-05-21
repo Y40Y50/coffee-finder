@@ -179,6 +179,8 @@ The following features were tested after deployment:
 
 No major differences were identified between the deployed version and the development version of the website.
 
+--- 
+
 ## Bugs Found and Fixed
 
 * Quiz not responding initially → Fixed by correcting event listener
@@ -218,6 +220,7 @@ Examples of commits include:
 * Fixed bugs and improved UI
 
 The commit history demonstrates continuous development rather than uploading the entire project at the end.
+---
 
 ## File Structure
 
@@ -247,8 +250,8 @@ The quiz allows users to select options such as "Black & Strong" or "Sweet & Cre
 JavaScript function checkChoice() processes user input and displays results
 The result is shown dynamically on the page without reloading
 
-![Quiz result befor](assets/images/Quiz-Result.png)
-![Quiz result after](assets/images/Quiz-Resultafter.png)
+![Quiz Result Before](assets/images/Quiz-Result.png)
+![Quiz Result After](assets/images/Quiz-Resultafter.png)
 
 ### 2. Responsive Navigation Menu
 
