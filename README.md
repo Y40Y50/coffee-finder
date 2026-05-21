@@ -204,14 +204,20 @@ Steps:
 
 ## Version Control
 
-Git and GitHub were used to manage development.
-Commits include:
+Git and GitHub were used throughout the development process to manage the project and track changes over time.
+
+Regular commits were made during development to document feature additions, bug fixes, UI improvements, and README updates.
+
+Examples of commits include:
 
 * Initial project setup
 * Added quiz functionality
+* Improved search bar
+* Added validation screenshots
+* Improved README testing documentation
 * Fixed bugs and improved UI
 
----
+The commit history demonstrates continuous development rather than uploading the entire project at the end.
 
 ## File Structure
 
