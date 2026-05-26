@@ -56,7 +56,9 @@ Design decisions:
 * Clear text for readability
 
 ![wireframe](assets/images/wireframe-desktop.jpg)
+
 ![wireframe](assets/images/wireframe-desktop1.jpg)
+
 ![wireframe](assets/images/wireframe-mobile.jpg)
 
 ---
@@ -86,7 +88,7 @@ The following tools were used:
 
 Automated testing is useful because it quickly identifies coding issues, validation errors, and problems with web standards compliance.
 
-## Manual Testing Results
+## Testing
 
 | Test ID | Page | Feature Tested | Steps Taken | Expected Result | Actual Result | Pass/Fail |
 |----------|------|----------------|-------------|-----------------|---------------|------------|
@@ -105,6 +107,7 @@ Automated testing is useful because it quickly identifies coding issues, validat
 ### User Story 1 – Clear Navigation
 
 As a customer I want clear navigation so I can find website sections easily.
+
 #### Evidence
 The navigation bar remains visible across the website and correctly links to all sections including Home, Finder, Coffee, Quiz, and About.
 
@@ -113,54 +116,69 @@ The navigation bar remains visible across the website and correctly links to all
 
 ### User Story 2 – Browse Coffee Products
 As a customer I want to browse coffee products so I can choose a product easily.
+
 #### Evidence
 Coffee products are displayed using responsive product cards with images, descriptions, and order buttons.
+
 ![Coffee Products](assets/docs/products-page.png)
 ---
 
 ### User Story 3 – Interactive Quiz Functionality
 As a user I want interactive features so the website feels engaging and responsive.
+
 #### Evidence
 The website includes an interactive coffee quiz where users can select options and receive feedback.
+
 ![Quiz Feature](assets/docs/quiz-test.png)
 ---
 
 ### User Story 4 – Search and Filter Functionality
 As a user I want to search and filter products so I can quickly find suitable coffee options.
+
 #### Evidence
 The website includes a search bar and category filter buttons for improved usability.
+
 ![Search Feature](assets/docs/search-test.png)
 ---
 
 ### User Story 5 – About Section and Brand Information
 As a customer I want to learn about the brand and its story.
+
 #### Evidence
 The About section provides brand information and improves user engagement.
+
 ![About Section](assets/docs/about-page.png)
 ---
 
 ### User Story 6 – Responsive Mobile Design
 As a user I want the website to work correctly on mobile devices.
+
 #### Evidence
 The website layout adjusts correctly on smaller screen sizes. Navigation, images, buttons, and text remain readable and usable on mobile devices.
+
 ![Mobile View](assets/docs/mobile-view.png)
 ---
 
 ### User Story 7 – Tablet Responsive Layout
 As a user I want the website to display properly on tablet devices.
+
 #### Evidence
 The website remains responsive on tablet screen sizes with properly aligned sections, responsive navigation, and accessible content spacing.
+
 ![Tablet View](assets/docs/tablet-view.png)
 
-### Validation
+## Validation
 
 * HTML validated using W3C Validator  
+
 ![HTML Validator](assets/images/Html-checker.png)
 
 * CSS validated using W3C Validator  
+
 ![CSS Validator](assets/images/CSS-checker.png)
 
 * JavaScript validated using JSLint  
+
 ![JavaScript Validator](assets/images/jslint-checker.png)
 
 ---
@@ -192,6 +210,7 @@ No major differences were identified between the deployed version and the develo
 ## Deployment
 
 This project was deployed using GitHub Pages.
+
 [GitHub live link](https://y40y50.github.io/coffee-finder/)
 
 Steps:
@@ -224,14 +243,15 @@ The commit history demonstrates continuous development rather than uploading the
 
 ## File Structure
 
+```text
 assets/
-├── css/ → Stylesheets  
-├── js/ → JavaScript functionality  
-├── images/ → Website images and media  
-├── docs/ → Testing screenshots and evidence  
+├── css/ → Stylesheets
+├── js/ → JavaScript functionality
+├── images/ → Website images and media
+├── docs/ → Testing screenshots and evidence
 
 index.html → Main HTML page
----
+```
 
 ## Credits
 
@@ -251,6 +271,7 @@ JavaScript function checkChoice() processes user input and displays results
 The result is shown dynamically on the page without reloading
 
 ![Quiz Result Before](assets/images/Quiz-Result.png)
+
 ![Quiz Result After](assets/images/Quiz-Resultafter.png)
 
 ### 2. Responsive Navigation Menu
@@ -265,6 +286,7 @@ JavaScript event listener adds/removes .active class
 Menu icon changes from ☰ to X for better UX
 
 ![menu closed](assets/images/menu-close.png)
+
 ![menu open](assets/images/menu-open.png)
 
 ### 3. Interactive Video Modal
@@ -310,6 +332,7 @@ As a user, I want to search for a coffee and receive feedback if no results are 
     Clearing input restores all items
 
 ![results](assets/images/results.png)
+
 ![no result](assets/images/noresults.png)
 
 ---
